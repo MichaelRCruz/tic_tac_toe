@@ -20,7 +20,14 @@ var switcher = function() {
 };
 
 var dude = function() {
-// this function needs to determine a tie
+  function checkForTie(check) {
+      return check < 9;
+  }
+  if (board.some(checkForTie)) {
+    null
+  } else {
+    alert("It's a tie!");
+  }
 };
 
 var winLogic = function() {
@@ -54,56 +61,92 @@ var winLogic = function() {
 };
 
 _one.addEventListener('click', function() {
-  this.innerHTML =  marker;
-  board[0] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[0] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _two.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[1] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[1] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _three.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[2] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[2] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _four.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[3] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[3] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _five.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[4] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[4] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _six.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[5] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[5] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _seven.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[6] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[6] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _eight.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[7] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML === "X" || this.innerHTML === "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[7] = marker;
+    switcher();
+    winLogic();
+  }
 });
 _nine.addEventListener('click', function() {
-  this.innerHTML = marker;
-  board[8] = marker;
-  switcher();
-  winLogic();
+  if (this.innHTML == "X" || this.innerHTML == "O") {
+    alert("This cell cannot be played again.")
+  } else {
+    this.innerHTML =  marker;
+    board[8] = marker;
+    switcher();
+    winLogic();
+  }
 });
