@@ -1,0 +1,49 @@
+.container {
+  height: 302px;
+  width: 302px;
+  background-color: lightgray;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 0;
+  font-size: 100px;
+}
+
+#one {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#two {
+  border-bottom: 1px solid black;
+}
+
+#three {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#four {
+  border-right: 1px solid black;
+}
+
+#six {
+  border-left: 1px solid black;
+}
+
+#seven {
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#eight {
+  border-top: 1px solid black;
+}
+
+#nine {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
