@@ -1,7 +1,7 @@
 .container {
   height: 302px;
   width: 302px;
-  background-color: lightgray;
+  background: radial-gradient(circle, lightgray, white);
 }
 
 .square {

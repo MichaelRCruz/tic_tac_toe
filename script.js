@@ -7,9 +7,23 @@ _six = document.getElementById('six');
 _seven = document.getElementById('seven');
 _eight = document.getElementById('eight');
 _nine = document.getElementById('nine');
+_button = document.getElementById('clear')
 
 var board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var marker = "X";
+
+_button.addEventListener('click', function() {
+  _one.innerHTML = "";
+  _two.innerHTML = "";
+  _three.innerHTML = "";
+  _four.innerHTML = "";
+  _five.innerHTML = "";
+  _six.innerHTML = "";
+  _seven.innerHTML = "";
+  _eight.innerHTML = "";
+  _nine.innerHTML = "";
+  board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+});
 
 var switcher = function() {
   if (marker == "X") {
@@ -21,14 +35,14 @@ var switcher = function() {
 
 // Need to alert user in the event of a tie.
 var isTie = function() {
-  // function checkForTie(check) {
-  //     check !== NaN;
-  // }
-  // if (board.some(checkForTie)) {
-  //   null
-  // } else {
-  //   alert("It's a tie!");
-  // }
+  function checkForTie(check) {
+      return check !== NaN;
+  }
+  if (board.some(checkForTie)) {
+    null
+  } else {
+    alert("It's a tie!");
+  }
 };
 
 var winLogic = function() {
