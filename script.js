@@ -19,15 +19,16 @@ var switcher = function() {
   }
 };
 
-var dude = function() {
-  function checkForTie(check) {
-      return check < 9;
-  }
-  if (board.some(checkForTie)) {
-    null
-  } else {
-    alert("It's a tie!");
-  }
+// Need to alert user in the event of a tie.
+var isTie = function() {
+  // function checkForTie(check) {
+  //     check !== NaN;
+  // }
+  // if (board.some(checkForTie)) {
+  //   null
+  // } else {
+  //   alert("It's a tie!");
+  // }
 };
 
 var winLogic = function() {
@@ -56,7 +57,7 @@ var winLogic = function() {
     switcher();
     alert(marker + " wins!");
   } else {
-    dude();
+    isTie();
   }
 };
 
@@ -150,3 +151,5 @@ _nine.addEventListener('click', function() {
     winLogic();
   }
 });
+
+console.log(typeof board[0])
