@@ -1,27 +1,23 @@
-_one = document.getElementById('one');
-_two = document.getElementById('two');
-_three = document.getElementById('three');
-_four = document.getElementById('four');
-_five = document.getElementById('five');
-_six = document.getElementById('six');
-_seven = document.getElementById('seven');
-_eight = document.getElementById('eight');
-_nine = document.getElementById('nine');
+one = document.getElementById('one');
+two = document.getElementById('two');
+three = document.getElementById('three');
+four = document.getElementById('four');
+five = document.getElementById('five');
+six = document.getElementById('six');
+seven = document.getElementById('seven');
+eight = document.getElementById('eight');
+nine = document.getElementById('nine');
 _button = document.getElementById('clear')
 
 var board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var things = [one, two, three, four, five, six, seven, eight, nine];
 var marker = "X";
 
+
 _button.addEventListener('click', function() {
-  _one.innerHTML = "";
-  _two.innerHTML = "";
-  _three.innerHTML = "";
-  _four.innerHTML = "";
-  _five.innerHTML = "";
-  _six.innerHTML = "";
-  _seven.innerHTML = "";
-  _eight.innerHTML = "";
-  _nine.innerHTML = "";
+for (var i = 0; i < things.length; i++) {
+  things[i].innerHTML = "";
+}
   board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 });
 
@@ -75,7 +71,21 @@ var winLogic = function() {
   }
 };
 
-_one.addEventListener('click', function() {
+
+// for (var i = 0; i < things.length; i++) {
+//   things[i].addEventListener('click', function() {
+//     if (this.innHTML == "X" || this.innerHTML == "O") {
+//       alert("This cell cannot be played again.")
+//     } else {
+//       this.innerHTML =  marker;
+//       board[i] = marker;
+//       switcher();
+//       winLogic();
+//     }
+//   });
+// }
+
+one.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -85,7 +95,7 @@ _one.addEventListener('click', function() {
     winLogic();
   }
 });
-_two.addEventListener('click', function() {
+two.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -95,7 +105,7 @@ _two.addEventListener('click', function() {
     winLogic();
   }
 });
-_three.addEventListener('click', function() {
+three.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -105,7 +115,7 @@ _three.addEventListener('click', function() {
     winLogic();
   }
 });
-_four.addEventListener('click', function() {
+four.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -115,7 +125,7 @@ _four.addEventListener('click', function() {
     winLogic();
   }
 });
-_five.addEventListener('click', function() {
+five.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -125,7 +135,7 @@ _five.addEventListener('click', function() {
     winLogic();
   }
 });
-_six.addEventListener('click', function() {
+six.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -135,7 +145,7 @@ _six.addEventListener('click', function() {
     winLogic();
   }
 });
-_seven.addEventListener('click', function() {
+seven.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -145,7 +155,7 @@ _seven.addEventListener('click', function() {
     winLogic();
   }
 });
-_eight.addEventListener('click', function() {
+eight.addEventListener('click', function() {
   if (this.innHTML === "X" || this.innerHTML === "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -155,7 +165,7 @@ _eight.addEventListener('click', function() {
     winLogic();
   }
 });
-_nine.addEventListener('click', function() {
+nine.addEventListener('click', function() {
   if (this.innHTML == "X" || this.innerHTML == "O") {
     alert("This cell cannot be played again.")
   } else {
@@ -165,5 +175,3 @@ _nine.addEventListener('click', function() {
     winLogic();
   }
 });
-
-console.log(typeof board[0])
