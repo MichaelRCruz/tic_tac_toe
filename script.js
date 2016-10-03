@@ -45,7 +45,7 @@ function winLogic() {
     alert(marker + " wins!")
   } else if (board[6] == board[7] && board[6] == board[8]) {
     switcher();
-    alert(marker = " wins!");
+    alert(marker + " wins!");
   } else if (board[0] == board[4] && board[0] == board[8]) {
     switcher();
     alert(marker + " wins!");
