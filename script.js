@@ -29,15 +29,11 @@ var switcher = function() {
   }
 };
 
-// Need to alert user in the event of a tie.
 var isTie = function() {
-  function checkForTie(check) {
-      return check !== NaN;
-  }
-  if (board.some(checkForTie)) {
-    null
+  if (board[0] !== 1 && board[1] !== 2 && board[2] !== 3 && board[3] !== 4 && board[4] !== 5 && board[5] !== 6 && board[6] !== 7 && board[7] !== 8 && board[8] !== 9) {
+    alert("It's a tie!")
   } else {
-    alert("It's a tie!");
+    return null;
   }
 };
 
