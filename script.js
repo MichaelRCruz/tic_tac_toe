@@ -9,6 +9,10 @@ eight = document.getElementById('eight');
 nine = document.getElementById('nine');
 _button = document.getElementById('clear')
 
+// for (var i = 0; i < things.length; i++) {
+//   things[i] = document.getElementById(things[i]);
+// }
+
 var board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var things = [one, two, three, four, five, six, seven, eight, nine];
 var marker = "X";
