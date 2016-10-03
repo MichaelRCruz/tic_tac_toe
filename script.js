@@ -13,7 +13,6 @@ var board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var things = [one, two, three, four, five, six, seven, eight, nine];
 var marker = "X";
 
-
 _button.addEventListener('click', function() {
 for (var i = 0; i < things.length; i++) {
   things[i].innerHTML = "";
