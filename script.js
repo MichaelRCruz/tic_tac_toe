@@ -7,7 +7,7 @@ six = document.getElementById('six');
 seven = document.getElementById('seven');
 eight = document.getElementById('eight');
 nine = document.getElementById('nine');
-_button = document.getElementById('clear')
+_button = document.getElementById('clear');
 
 // for (var i = 0; i < things.length; i++) {
 //   things[i] = document.getElementById(things[i]);
@@ -86,3 +86,5 @@ var dude = function(i) {
 for (var i = 0; i < things.length; i++) {
   dude(i);
 }
+
+// this is me learning git merge
